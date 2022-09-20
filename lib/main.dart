@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Onboarding UI',
         debugShowCheckedModeBanner: false,
-        // home: OnboardingScreen(),
-        home: ListDetailPage());
+        home: OnboardingScreen());
+    // home: ListDetailPage());
   }
 }

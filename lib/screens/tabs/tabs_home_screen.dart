@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:my_app/screens/list_detail_screen.dart';
 
 class TabsHomePage extends StatefulWidget {
   const TabsHomePage({Key? key}) : super(key: key);
@@ -318,36 +319,45 @@ class _TabsHomePageState extends State<TabsHomePage>
                           child: _foundUsers.isNotEmpty
                               ? ListView.builder(
                                   itemCount: _foundUsers.length,
-                                  itemBuilder: (context, index) => Card(
-                                    elevation: 1,
-                                    margin:
-                                        const EdgeInsets.symmetric(vertical: 2),
-                                    child: ListTile(
-                                        leading: Image.asset(
-                                            _foundUsers[index]['image']),
-                                        // CircleAvatar(
-                                        //   radius: 30.0,
-                                        //   backgroundImage:
-                                        //       NetworkImage(
-                                        //           _foundUsers[index]['image']),
-                                        //   backgroundColor: Colors.transparent,
-                                        // ),
-                                        title: Text(_foundUsers[index]['name']),
-                                        subtitle: Text(
-                                            '${_foundUsers[index]["des"]}'),
-                                        trailing: Column(
-                                          children: [
-                                            Text(_foundUsers[index]['price']),
-                                            Text(
-                                              _foundUsers[index]['oldPrice'],
-                                              style: new TextStyle(
-                                                color: Colors.grey,
-                                                decoration:
-                                                    TextDecoration.lineThrough,
+                                  itemBuilder: (context, index) =>
+                                      GestureDetector(
+                                    onTap: () => Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                ListDetailPage())),
+                                    child: Card(
+                                      elevation: 1,
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 2),
+                                      child: ListTile(
+                                          leading: Image.asset(
+                                              _foundUsers[index]['image']),
+                                          // CircleAvatar(
+                                          //   radius: 30.0,
+                                          //   backgroundImage:
+                                          //       NetworkImage(
+                                          //           _foundUsers[index]['image']),
+                                          //   backgroundColor: Colors.transparent,
+                                          // ),
+                                          title:
+                                              Text(_foundUsers[index]['name']),
+                                          subtitle: Text(
+                                              '${_foundUsers[index]["des"]}'),
+                                          trailing: Column(
+                                            children: [
+                                              Text(_foundUsers[index]['price']),
+                                              Text(
+                                                _foundUsers[index]['oldPrice'],
+                                                style: new TextStyle(
+                                                  color: Colors.grey,
+                                                  decoration: TextDecoration
+                                                      .lineThrough,
+                                                ),
                                               ),
-                                            ),
-                                          ],
-                                        )),
+                                            ],
+                                          )),
+                                    ),
                                   ),
                                 )
                               : const Text(
