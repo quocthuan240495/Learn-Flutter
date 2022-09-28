@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/screens/checkout_screen.dart';
 
 class ListDetailPage extends StatefulWidget {
   const ListDetailPage({Key? key}) : super(key: key);
@@ -84,7 +85,10 @@ class _ListDetailPageState extends State<ListDetailPage> {
                       Padding(
                           padding: const EdgeInsets.only(right: 19, bottom: 30),
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CheckoutPage())),
                             style: ElevatedButton.styleFrom(
                                 shape: const RoundedRectangleBorder(
                                     borderRadius:

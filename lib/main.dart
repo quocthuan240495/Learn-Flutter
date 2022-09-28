@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/screens/onboarding_screen.dart';
-import 'package:my_app/screens/list_detail_screen.dart';
+import 'package:my_app/screens/checkout_screen.dart';
+import 'package:my_app/screens/payment_method_screen.dart';
+import 'package:my_app/screens/voucher_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +13,8 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Onboarding UI',
         debugShowCheckedModeBanner: false,
         home: OnboardingScreen());
-    // home: ListDetailPage());
+    // home: CheckoutPage());
+    // home: PaymentMethodPage());
+    // home: VoucherPage());
   }
 }
