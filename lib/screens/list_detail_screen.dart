@@ -1,5 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:my_app/providers/counter_provider.dart';
 import 'package:my_app/screens/checkout_screen.dart';
+import 'package:provider/provider.dart';
 
 class ListDetailPage extends StatefulWidget {
   const ListDetailPage({Key? key}) : super(key: key);
@@ -9,7 +13,7 @@ class ListDetailPage extends StatefulWidget {
 }
 
 class _ListDetailPageState extends State<ListDetailPage> {
-  int counter = 0;
+  // int counter = 0;
   bool IceOrHot = true;
   var size = "R";
   bool sugar = true;
@@ -64,16 +68,14 @@ class _ListDetailPageState extends State<ListDetailPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: const [
+                          children: [
+                            Text("Total",
+                                style: TextStyle(
+                                    color: Color(0xff555555),
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 14)),
                             Text(
-                              "Total",
-                              style: TextStyle(
-                                  color: Color(0xff555555),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 14),
-                            ),
-                            Text(
-                              "Rp.25.000",
+                              '${context.watch<Counter>().priceTotal}',
                               style: TextStyle(
                                   color: Color(0xff555555),
                                   fontWeight: FontWeight.w700,
@@ -214,13 +216,15 @@ class _ListDetailPageState extends State<ListDetailPage> {
                                                           .spaceBetween,
                                                   children: [
                                                     GestureDetector(
-                                                        onTap: () =>
-                                                            setState(() {
-                                                              counter == 0
-                                                                  ? print(
-                                                                      '${counter}')
-                                                                  : counter--;
-                                                            }),
+                                                        onTap: () => context
+                                                            .read<Counter>()
+                                                            .decrement(),
+                                                        // setState(() {
+                                                        //   counter == 0
+                                                        //       ? print(
+                                                        //           '${counter}')
+                                                        //       : counter--;
+                                                        // }),
                                                         child: const Icon(
                                                             Icons.remove,
                                                             color:
@@ -234,14 +238,16 @@ class _ListDetailPageState extends State<ListDetailPage> {
                                                         color: Colors.white,
                                                         child: Center(
                                                             child: Text(
-                                                                '${counter}'))),
+                                                                '${context.watch<Counter>().count}'))),
                                                     GestureDetector(
-                                                        onTap: () {
-                                                          setState(() {
-                                                            print('${counter}');
-                                                            counter++;
-                                                          });
-                                                        },
+                                                        onTap: () => context
+                                                            .read<Counter>()
+                                                            .increment(),
+                                                        //   setState(() {
+                                                        //     print('${counter}');
+                                                        //     counter++;
+                                                        //   });
+                                                        // },
                                                         child: const Icon(
                                                           Icons.add,
                                                           color: Colors.white,

@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:my_app/screens/payment_method_screen.dart';
 import 'package:my_app/screens/voucher_screen.dart';
+import 'package:my_app/screens/transaction_screen.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({Key? key}) : super(key: key);
@@ -89,7 +90,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       Padding(
                           padding: const EdgeInsets.only(right: 19, bottom: 30),
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TransactionPage())),
                             style: ElevatedButton.styleFrom(
                                 shape: const RoundedRectangleBorder(
                                     borderRadius:

@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		MVvZ5Whr3V4Vhp4YKEGieDLREyo=
+		weX4ffRJCUgTdaPKyYWWpYmAt4M=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		egmclsSzuZM7hw/ewjUPvuLm6Nc=
+		pWBhFrGGqJkcwy7Qg+SLKXk9hdo=
 		</data>
 		<key>flutter_assets/assets/fonts/cm_sans_serif_2012.ttf</key>
 		<data>
@@ -100,6 +100,10 @@
 		<data>
 		WQAss/WBoLbQlWx6WsLM2eMcfUw=
 		</data>
+		<key>flutter_assets/assets/images/transaction_check.png</key>
+		<data>
+		fY8K99d1y0z29oKA6PxvsD7bOfU=
+		</data>
 		<key>flutter_assets/assets/images/transfer_bank.png</key>
 		<data>
 		2s6cJLH5AfiKaoSRV1WFQwZPXIM=
@@ -134,7 +138,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		yxwHLg9Rua8yZAuJvUIL73txDGk=
+		/3gw3Q6q9CW+//egKkV255/VqTs=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -151,11 +155,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MVvZ5Whr3V4Vhp4YKEGieDLREyo=
+			weX4ffRJCUgTdaPKyYWWpYmAt4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			HyMB8lRYQHOLPSiOdcGrsxDeOsSBoC5z32Zh5hG0MRM=
+			/SwJd8cgerR0sOFpVVG8nor+oeInItyCKqQRpF6Gje8=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -173,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			egmclsSzuZM7hw/ewjUPvuLm6Nc=
+			pWBhFrGGqJkcwy7Qg+SLKXk9hdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			WbOHtgGUuldcA07QLk8DTbgLbvboMkMOBWm3sXF4iIw=
+			6prQiB7VTuKTtZF+OeuVpmtq0235ggEGiQpI2VA5Kps=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/fonts/cm_sans_serif_2012.ttf</key>
@@ -400,6 +404,17 @@
 			NQbvE14crLuAUlL41ZjyY5eCiEWIt+hFFZZmuhiDVLY=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/transaction_check.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fY8K99d1y0z29oKA6PxvsD7bOfU=
+			</data>
+			<key>hash2</key>
+			<data>
+			9RD1F7VyRVRWxWN3Mv+YEN4mRw40v7CO8XJkN7+SJ5g=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/transfer_bank.png</key>
 		<dict>
 			<key>hash</key>
@@ -492,11 +507,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yxwHLg9Rua8yZAuJvUIL73txDGk=
+			/3gw3Q6q9CW+//egKkV255/VqTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			KFqx1kZonzgSRXFI1BA2wfxx0ZXAgCiY2i87VCJtw/c=
+			4BEyd++qM5F1fO89cWJVt5OOKoNXZV+GbSfSIR0ILVg=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
